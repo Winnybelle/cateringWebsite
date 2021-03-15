@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\complete-javascript-course-master\\7-ES6"
+		},
+		{
+			"path": "..\\..\\complete-javascript-course-master\\6-budgety"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\THEPORTFOLIO"
+		},
+		{
+			"path": "..\\ExercisesPracticesSolutionOnline"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ExercisesPracticesSolutionOnline"
+	}
+}

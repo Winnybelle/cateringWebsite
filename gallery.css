@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    text-decoration: none;  
+    font-family:'roboto', sans-serif;
+}
+#content {
+padding-bottom: 0px;
+
+}
+
+#mainNavbar {
+background-color:teal;
+color: #fff;
+border-bottom:1px solid goldenrod;
+height: 60px;
+}
+@media only screen and (max-width: 992px){
+#mainNavbar .nav-item {
+    background: teal;
+    color:black;
+     padding: 10px; 
+    width: 300px;
+    height: 60px;
+    margin-top: -20px;
+    margin-left: -15px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    }
+
+}
+
+.navbar-brand, .brandLogo1 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'roboto',sans-serif; 
+}
+.dropdown-menu.show {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight:200;
+    line-height: 1.6;
+    text-align:left;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing:1px ; 
+    box-sizing: inherit;
+    position: absolute;
+    display: block;
+    padding: 5px 5px 5px 5px;
+    z-index:22;
+    margin-top:-10px;
+    background-color: teal;
+    width: 220px;
+    height: 220px;
+} 
+a.dropdown-item:focus,
+a.dropdown-item:hover{
+    background-color: gray;
+}
+
+.brandLogo {
+    margin-top: -22px;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    margin-left: 3px;
+}
+.gallery {
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+     padding: 30px;
+    box-sizing: inherit;
+    grid-column-gap: 30px;
+}
+.gallery .g-img {
+    transition: 1s;
+    padding: 15px; 
+    width: 200px;
+}
+.gallery .g-img:hover {
+    filter: grayscale(80%);
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 992px){
+    .gallery {
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto;
+        box-sizing: inherit;
+    }
+   
+}
+@media screen and (max-width: 767px){ /*820*/
+    .gallery{
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto;
+        box-sizing: inherit;
+    }
+    
+}
+@media screen and (max-width: 480px){  /*520*/
+    .gallery{
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+        box-sizing: inherit;
+    }
+    .dropdown-menu.show {
+        margin-top: -20px;
+    }
+}
+.footer {
+    background-color:#555555;
+    margin-top: 150px;
+    height:400px;
+    display: block;
+    width: 100%;
+    color: whitesmoke;
+    box-sizing: inherit;
+    padding: 0;
+    text-align: left;
+
+}
+
+.main-content {
+    display: flex;
+
+}
+.main-content .item {
+    flex-basis: 50%;
+    padding: 10px 20px;
+
+}
+.item h2 {
+   font-size:1.125rem ; 
+   font-weight: 600;
+   text-transform: uppercase;
+}
+.item .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.item .content::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background:darkkhaki;
+}
+.item .content::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: goldenrod;
+    top: -10px;
+}
+.left .content p {
+    text-align: justify;
+
+}
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social .medialinks {
+    padding: 0 2px;
+}
+.left .content .social .medialinks span{
+   height: 40px; 
+   width: 40px;
+   background:  rgba(218, 165, 32, 0.342);
+   color: whitesmoke; 
+   line-height: 40px;
+   text-align: center;
+   font-size: 28px;
+   border-radius: 5px;
+   transition: 0.3s;
+}
+.left .content .social .medialinks span:hover{
+    background: rgba(218, 165, 32, 0.897);
+} 
+#twitter-widget-0 {
+    width: 300px;
+   height:250px !important;
+   margin-top: 50px;
+}
+blockquote {
+   margin: 20px;
+}
+
+.center .content .fas {
+  font-size: 1.4375rem;  
+  background: rgba(218, 165, 32, 0.342);
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius:50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover {
+    background: goldenrod;
+}
+.center .content .text {
+    font: size 1.0625rem; 
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center .content .phone {
+    margin: 10px 0;
+}
+.right .formfooter .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: white;
+}
+.right .formfooter .msg {
+    margin-top: 10px;
+}
+.right .formfooter .ftInput, .right .formfooter textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: whitesmoke;
+    padding-left: 10px;
+    border: 1px solid goldenrod;
+}
+.right .formfooter .ftInput:focus,
+.right .formfooter textarea:focus{
+   outline-color:lightblue; 
+}
+.right .formfooter .ftInput {
+    height: 35px;
+}
+.right .formfooter .form-btn .fbtn{
+    height: 40px;
+    width: 100%;
+    border: none;
+    color:white;
+    outline: none;
+    background:rgba(218, 165, 32, 0.651);
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s; 
+}
+.right .formfooter .form-btn .fbtn:hover {
+    background: goldenrod;
+}
+.rate-f {
+    margin-top: 8px;
+}
+#rate-f2 {
+    max-width: 50%;
+    height: 100px;
+}
+#rate-f2 {
+    border-style: none;
+}
+
+ .bottom-container {
+     margin-top: -30px;
+     margin-left: -10px;
+     margin-right: 10px;
+     height:20px;
+     display: block;
+     justify-content: center;
+     align-items: center; 
+     color: #151515; 
+    
+}
+.copy-text {
+    margin-left: 10px;
+    box-sizing: inherit;
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    color: #303030;
+}  
+.privacy-copy {
+    font-size: 12px;
+    text-align: center;
+    font-weight:300;
+}
+ 
+@media screen and (max-width: 900px) {
+     .footer {
+        position: relative;
+        bottom: 0px;
+        margin-top: 50px;
+    }
+    .right h2 {
+        color:white;
+
+        margin-top: 60px;
+        text-align: left;
+    }
+    #rate-f2 {
+        max-width: 70%;
+        height: auto;
+    }
+    #h-addy {
+        color: black;
+    }
+    .center .content {
+        background-color: #555555;
+        padding: 10px;
+        border-radius: 2px;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .item {
+        margin: 5px 0;
+    }
+    .bottom-container{
+        margin-top: -10px;
+    }
+}

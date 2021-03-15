@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    text-decoration: none;  
+    font-family: 'roboto', sans-serif;
+}
+
+#content {
+padding-bottom: 0px;
+}
+
+#mainNavbar {
+background-color:teal;
+color: #fff;
+border-bottom:1px solid goldenrod;
+height: 60px;
+}
+
+@media only screen and (max-width: 992px){
+#mainNavbar .nav-item {
+    background: teal;
+    color:black;
+    padding: 10px;
+    width: 300px;
+    height: 60px;
+    margin-top: -20px;
+    margin-left: -15px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    }
+
+.dropdown-menu.show {
+    margin-top: -20px;
+    }
+
+}
+
+.navbar-brand, .brandLogo1 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family:'roboto', sans-serif; 
+    }
+
+.dropdown-menu.show {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight:200;
+    line-height: 1.6;
+    text-align:left;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing:1px ; 
+    box-sizing: inherit;
+    position: absolute;
+    display: block;
+    padding: 5px 5px 5px 5px;
+    z-index:22;
+    margin-top:10px;
+    background-color: teal;
+    width: 220px;
+    height: 220px;
+    } 
+
+a.dropdown-item:focus,
+a.dropdown-item:hover{
+    background-color: gray;
+    }
+
+.brandLogo {
+    margin-top: -22px;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    margin-left: 3px;
+    }
+
+@media only screen and (max-width: 992px){
+    div#content {
+        max-width: 100%;
+        background-size: cover;
+    }
+    .dropdown-menu.show {
+        margin-top: -20px;
+    }
+}
+
+.container-body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+   } 
+
+.container {
+    width: 100%;
+    
+   }  
+
+.gridWrapper {
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+     padding: 30px;
+    box-sizing: inherit;
+    grid-column-gap: 30px;
+   }
+
+ .cards {
+   display:block;
+   width: 100%;
+    }
+
+.cardImg {
+   width: 100%;
+   height: 50%;
+    }
+
+.cardImg .main-img {
+   width: 400px;
+   height: 100%;
+   }
+
+.cardImg .main-img:hover {
+   filter: grayscale(80%);
+   transform: scale(1.1);
+}
+
+.card-content {
+   margin-top: 10px;
+   padding: 15px;
+   box-sizing: inherit;
+   letter-spacing: 1px;
+}
+
+button {
+    border: none;
+    display:inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    }
+
+.b-btn:hover {
+    color:black;
+    background-color: gray;
+    }
+
+#bk-btn {
+        color: #fff;
+        background-color: #000;
+    }
+
+.h-bkn {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 24px;
+}
+
+#modal {
+        display: none; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 3;
+    }
+    
+#popupForm  {
+        background: #efefef;
+        margin: 35px auto;
+        width: 70%;
+        height: 550px;
+        box-shadow:4px 4px 5px rgba(0, 0, 0,0.25);
+        margin-top: 80px;
+    
+    }
+    
+ #modal-header {
+        background: teal;
+        letter-spacing: 4px;
+        font-family: "Segoe UI",Arial,sans-serif;
+        font-weight: 200;
+        color: white;
+        padding: 16px 24px;
+        text-align: center;
+        font-size: 20px;
+        }
+
+#modal-header span.rightcancel {
+            font-size: 24px; 
+            float: right; 
+        }
+
+#modal-header span.rightcancel:hover {
+        color: #333;
+        cursor: pointer;
+    }
+.checkBtn {
+        width: 100%;
+        height: 50px;
+        background: crimson;
+        color: #fff;
+        padding: 8px 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .checkBtn:hover {
+        background-color:wheat;
+        color: black;
+        cursor: pointer;
+    }
+
+#close {
+        color: #fff;
+        border: none;
+        float: left;
+        font-size: 18px;
+        padding: 8px 16px;
+        width: 100px;
+        height: 40px;
+        margin-top: 18px;
+        margin-bottom: 20px;
+        background: #f44336;
+        
+    }
+
+.close:hover {
+        background-color: white;
+        color: black;
+        border: none;
+    }
+    
+.form-body {
+        padding: 12px 16px;
+        
+    }
+    
+.help  {
+        float: right;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+#p-form .input {
+        width: 100%;
+    }
+
+#p-form {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+.input .label{
+        display: block;
+        font: 18px;
+    }
+
+.input {
+      width: 100%;
+      padding: 6px 16px; 
+      border: 1px solid gray; 
+      border-radius: 4px;
+      font-size: 20px;
+
+    }
+    
+@media screen and (max-width: 1250px){
+   .gridWrapper{
+       width: 100%;
+       height: auto;
+       display: grid;
+       justify-content: center;
+       align-items: center;
+       grid-template-columns: auto auto auto;
+       box-sizing: inherit;
+   }
+   .cardImg .main-img {
+       width: 200px;
+       height: 100%;
+       padding: 0px;
+   }
+
+} 
+
+@media screen and (max-width: 767px){ /*820*/
+   .gridWrapper{
+       height: 100%;
+       display: grid;
+       justify-content: center;
+       align-items: center;
+       grid-template-columns: auto;
+       box-sizing: inherit;
+   }
+   .cardImg .main-img {
+       width: 300px;
+       height: auto;
+       padding: 0px;
+   }
+
+} 
+
+@media screen and (max-width: 480px){  /*520*/
+   .gridWrapper{
+       height: 100%;
+       display: grid;
+       justify-content: center;
+       align-items: center;
+       grid-template-columns: auto;
+       box-sizing: inherit;
+   }
+   .cardImg .main-img {
+       width: 100%;
+       height: 100%;
+   }
+}
+.footer {
+    background-color:#555555;
+    height:400px;
+    display: block;
+    width: 100%;
+    color: whitesmoke;
+    box-sizing: inherit;
+    padding: 0;
+    text-align: left;
+    }
+
+.main-content {
+    display: flex;
+    }
+
+    .main-content .item {
+    flex-basis: 50%;
+    padding: 10px 20px;
+
+}
+.item h2 {
+   font-size:1.125rem ; 
+   font-weight: 600;
+   text-transform: uppercase;
+}
+.item .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.item .content::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background:darkkhaki;
+}
+.item .content::after {
+position: absolute;
+content: '';
+height: 2px;
+width: 15%;
+background: goldenrod;
+top: -10px;
+}
+.left .content p {
+    text-align: justify;
+
+}
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social .medialinks {
+    padding: 0 2px;
+}
+.left .content .social .medialinks span{
+   height: 40px; 
+   width: 40px;
+   background:  rgba(218, 165, 32, 0.342);
+   color: whitesmoke; 
+   line-height: 40px;
+   text-align: center;
+   font-size: 28px;
+   border-radius: 5px;
+   transition: 0.3s;
+}
+.left .content .social .medialinks span:hover{
+    background: rgba(218, 165, 32, 0.897);
+} 
+#twitter-widget-0 {
+    width: 300px;
+   height:250px !important;
+   margin-top: 50px;
+}
+blockquote {
+   margin: 20px;
+}
+.center .content .fas {
+  font-size: 1.4375rem;  
+  background: rgba(218, 165, 32, 0.342);
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius:50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover {
+    background: goldenrod;
+}
+.center .content .text {
+    font: size 1.0625rem; 
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center .content .phone {
+    margin: 10px 0;
+}
+.right .formfooter .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: white;
+}
+.right .formfooter .msg {
+    margin-top: 10px;
+}
+.right .formfooter .ftInput, .right .formfooter textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: whitesmoke;
+    padding-left: 10px;
+    border: 1px solid goldenrod;
+}
+.right .formfooter .ftInput:focus,
+.right .formfooter textarea:focus{
+   outline-color:lightblue; 
+}
+.right .formfooter .ftInput {
+    height: 35px;
+}
+.right .formfooter .form-btn .fbtn{
+    height: 40px;
+    width: 100%;
+    border: none;
+    color:white;
+    outline: none;
+    background:rgba(218, 165, 32, 0.651);
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s; 
+}
+.right .formfooter .form-btn .fbtn:hover {
+    background: goldenrod;
+}
+.rate-f {
+    margin-top: 8px;
+}
+#rate-f2 {
+    max-width: 50%;
+    height: 100px;
+}
+#rate-f2 {
+    border-style: none;
+}
+
+ .bottom-container {
+     margin-top: -30px;
+     margin-left: -10px;
+     margin-right: 10px;
+     height:20px;
+     display: block;
+     justify-content: center;
+     align-items: center; 
+     color: #151515; 
+    
+    }
+
+    .copy-text {
+    margin-left: 10px;
+    box-sizing: inherit;
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    color: #303030;
+}  
+
+.privacy-copy {
+    font-size: 12px;
+    text-align: center;
+    font-weight:300;
+}
+ 
+@media screen and (max-width: 900px) {
+     .footer {
+        position: relative;
+        bottom: 0px;
+        margin-top: -300px;
+    }
+    .right h2 {
+        color:#303030;
+
+        margin-top: 60px;
+        text-align: left;
+    }
+    #rate-f2 {
+        max-width: 70%;
+        height: auto;
+    }
+    #h-addy {
+        color: black;
+    }
+    .center .content {
+        background-color: #555555;
+        padding: 10px;
+        border-radius: 2px;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    .main-content .item {
+        margin: 5px 0;
+    }
+    .bottom-container{
+        margin-top: -10px;
+    }
+}
+
